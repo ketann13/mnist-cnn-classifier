@@ -1,151 +1,123 @@
-📘 MNIST CNN Classifier
+# 🧠 MNIST CNN Classifier
 
-A simple and efficient Convolutional Neural Network (CNN) built using TensorFlow/Keras to classify handwritten digits (0–9) from the popular MNIST dataset.
+A simple and efficient **Convolutional Neural Network (CNN)** built using **TensorFlow/Keras** to classify handwritten digits (0–9) from the popular MNIST dataset.
 
-This project is perfect for beginners learning Deep Learning, and it demonstrates a complete end-to-end pipeline — from loading data to training, evaluation, and prediction.
+This project is perfect for beginners learning Deep Learning.  
+It demonstrates a complete end-to-end pipeline — from loading data to training, evaluation, and prediction.
 
-🚀 Project Overview
+---
 
-This project covers:
+## 🚀 Project Overview
 
-Loading & preprocessing image data
+This project includes:
 
-Building a CNN architecture
+- 🔄 Loading & preprocessing image data  
+- 🧱 Building a CNN architecture  
+- 🎓 Training and validating the model  
+- 📊 Evaluating accuracy  
+- 🔢 Predicting digits on test images  
 
-Training and validating the model
+---
 
-Evaluating accuracy
+## ✨ Features
 
-Predicting digits on test images
+- 🧠 Lightweight CNN with ~99% accuracy  
+- 🖼 Handles grayscale image preprocessing  
+- ⚡ Fast training (no GPU required)  
+- 📈 Shows model accuracy  
+- 🧪 Predicts digits on unseen images  
+- 🧩 Great starter deep learning project  
 
-Visualizing sample predictions
+---
 
-The model achieves ~99% accuracy using a lightweight CNN.
+## 📦 Installation
 
-🧠 What is MNIST?
-
-The MNIST dataset contains:
-
-70,000 images of handwritten digits
-
-Image size: 28 × 28 pixels
-
-Grayscale (1 channel)
-
-Clean, labeled data for digits 0–9
-
-Widely known as the “Hello World of Deep Learning”
-
-MNIST is the best dataset to understand CNN fundamentals.
-
-🏗️ Model Architecture
-
-The CNN architecture used:
-
-Input: 28 × 28 × 1 (grayscale image)
-
-Conv2D (32 filters, 3×3) + ReLU
-MaxPooling2D (2×2)
-
-Conv2D (64 filters, 3×3) + ReLU
-MaxPooling2D (2×2)
-
-Flatten
-Dense (64 units) + ReLU
-Dense (10 units) + Softmax
-
-
-This network is lightweight, fast to train, and performs exceptionally well on MNIST.
-
-📦 Installation
-
-Install the necessary dependencies:
-
-pip install tensorflow matplotlib numpy
-
+Install dependencies:
 ▶️ How to Run
-
-Run the Python file:
-
 python cnn_mnist.py
 
 
-What this script does:
+This will:
 
-Loads MNIST data
+Load the MNIST dataset
 
-Builds the CNN
+Build the CNN
 
-Trains for 5 epochs
+Train the model
 
-Evaluates on test data
+Evaluate accuracy
 
-Shows test accuracy
+Display a sample test image
 
-Displays a sample image
+Predict the digit
 
-Predicts the digit
+🏗️ Model Architecture
+Input: 28 × 28 × 1
 
-📊 Results
+Conv2D (32 filters, 3×3) + ReLU  
+MaxPooling2D (2×2)
 
-Typical output:
+Conv2D (64 filters, 3×3) + ReLU  
+MaxPooling2D (2×2)
 
+Flatten  
+Dense (64 units) + ReLU  
+Dense (10 units) + Softmax
+
+📊 Sample Output
 Test Accuracy: 99.12%
-Predicted digit: 7
+Predicted digit: 4
 
+🖼 Sample MNIST Digits
 
-The model learns to classify digits with high confidence.
-
-🖼️ Sample Digits
-
-Sample MNIST digits:
-
-🧩 Project Structure
+📁 Project Structure
 mnist-cnn-classifier/
 │
-├── cnn_mnist.py        # Main model training + prediction script
+├── cnn_mnist.py        # Main CNN training & prediction script
 └── README.md           # Project documentation
 
-💡 What You Learn from This Project
+🧠 Technologies Used
 
-How CNNs work
+TensorFlow / Keras
 
-Convolutions, pooling, flattening, softmax
+NumPy
 
-How to preprocess image datasets
+Matplotlib
 
-How to train and evaluate ML models
+Python
 
-How to structure ML code
+🚀 Future Enhancements
 
-How to visualize predictions
+📉 Add accuracy & loss visualization
 
-A strong foundation before moving to larger datasets like CIFAR-10 or real-world image classification tasks.
+🧪 Add confusion matrix
 
-🚀 Future Improvements
+🧱 Add BatchNorm / Dropout
 
-You can extend this project by adding:
+💾 Save & load model
 
-✔️ Confusion matrix
+⚡ Train deeper CNN models
 
-✔️ Accuracy/loss visualization
+🌐 Deploy using Streamlit or Flask
 
-✔️ Dropout for regularization
+🤝 Contributing
 
-✔️ Batch Normalization
+Contributions are welcome!
 
-✔️ Saving/loading model (.h5)
+Fork the repository
 
-✔️ Training on larger datasets
+Create a feature branch
 
-✔️ Deploying as a web app
+Commit your changes
 
-If you want, I can help you implement any of these.
+Push to the branch
 
-🤝 Contributions
+Open a pull request
 
-Feel free to open issues or submit pull requests to improve the model or add new features.
+👨‍💻 Author
 
-⭐ Show Support
+Ketan
+GitHub: @ketann13
 
-If you found this project helpful, please consider starring the repository ✨
+```bash
+pip install tensorflow numpy matplotlib
