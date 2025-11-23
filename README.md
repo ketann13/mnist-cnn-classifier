@@ -2,56 +2,68 @@
 
 A simple and efficient **Convolutional Neural Network (CNN)** built using **TensorFlow/Keras** to classify handwritten digits (0–9) from the popular MNIST dataset.
 
-This project is perfect for beginners learning Deep Learning.  
-It demonstrates a complete end-to-end pipeline — from loading data to training, evaluation, and prediction.
+This project is ideal for beginners in Deep Learning and demonstrates a complete end-to-end machine learning workflow — from loading data to training, evaluation, and prediction.
 
 ---
 
 ## 🚀 Project Overview
 
-This project includes:
+This project covers the following steps:
 
-- 🔄 Loading & preprocessing image data  
+- 🔄 Loading & preprocessing the MNIST dataset  
 - 🧱 Building a CNN architecture  
 - 🎓 Training and validating the model  
-- 📊 Evaluating accuracy  
-- 🔢 Predicting digits on test images  
+- 📊 Checking model accuracy  
+- 🔢 Predicting digits on new test images  
 
 ---
 
 ## ✨ Features
 
-- 🧠 Lightweight CNN with ~99% accuracy  
+- 🧠 Lightweight CNN achieving **~99% accuracy**  
 - 🖼 Handles grayscale image preprocessing  
-- ⚡ Fast training (no GPU required)  
-- 📈 Shows model accuracy  
-- 🧪 Predicts digits on unseen images  
-- 🧩 Great starter deep learning project  
+- ⚡ Fast training (CPU-friendly, no GPU required)  
+- 📈 Shows evaluation metrics  
+- 🧪 Makes predictions on unseen MNIST digits  
+- 🧩 Great starter project for ML and DL portfolios  
 
 ---
 
 ## 📦 Installation
 
-Install dependencies:
-▶️ How to Run
+Install the required dependencies:
+
+```bash
+pip install tensorflow numpy matplotlib
+```
+
+---
+
+## ▶️ How to Run the Project
+
+Run the script:
+
 python cnn_mnist.py
 
+The script will:
 
-This will:
+Load MNIST data
 
-Load the MNIST dataset
+Preprocess images
 
 Build the CNN
 
 Train the model
 
-Evaluate accuracy
+Evaluate the model
 
-Display a sample test image
+Display a test digit
 
 Predict the digit
 
-🏗️ Model Architecture
+---
+
+## 🏗️ Model Architecture
 Input: 28 × 28 × 1
 
 Conv2D (32 filters, 3×3) + ReLU  
@@ -64,60 +76,58 @@ Flatten
 Dense (64 units) + ReLU  
 Dense (10 units) + Softmax
 
-📊 Sample Output
+
+This simple architecture performs exceptionally well on MNIST with minimal computation.
+
+---
+
+## 📊 Sample Output
 Test Accuracy: 99.12%
-Predicted digit: 4
+Predicted Digit: 7
 
-🖼 Sample MNIST Digits
+---
 
-📁 Project Structure
+## 📁 Project Structure
 mnist-cnn-classifier/
 │
-├── cnn_mnist.py        # Main CNN training & prediction script
+├── cnn_mnist.py        # Main model training & prediction script
 └── README.md           # Project documentation
 
-🧠 Technologies Used
+---
 
-TensorFlow / Keras
+## 🧠 Technologies Used
 
-NumPy
+🐍 Python
 
-Matplotlib
+🔶 TensorFlow / Keras
 
-Python
+📘 NumPy
 
-🚀 Future Enhancements
+🎨 Matplotlib
 
-📉 Add accuracy & loss visualization
+---
+
+ ## 🚀 Future Enhancements
+
+Potential improvements:
+
+📉 Plot training accuracy & loss curves
 
 🧪 Add confusion matrix
 
-🧱 Add BatchNorm / Dropout
+🧱 Add dropout & batch normalization
 
-💾 Save & load model
+💾 Save/load trained models (model.h5)
 
-⚡ Train deeper CNN models
+🌐 Deploy with Streamlit or Flask
 
-🌐 Deploy using Streamlit or Flask
+⚡ Experiment with deeper CNNs or transfer learning
 
-🤝 Contributing
+---
+
+ ## 🤝 Contributing
 
 Contributions are welcome!
+Feel free to fork this repository and submit a pull request.
 
-Fork the repository
-
-Create a feature branch
-
-Commit your changes
-
-Push to the branch
-
-Open a pull request
-
-👨‍💻 Author
-
-Ketan
-GitHub: @ketann13
-
-```bash
-pip install tensorflow numpy matplotlib
+ project, please star ⭐ the repository — it helps a lot!
